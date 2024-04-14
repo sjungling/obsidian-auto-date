@@ -1,11 +1,10 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "auto-date-property",
+	"name": "Auto-date Property",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "Automatically adds a date property to a note with the creation date",
+	"author": "Scott Jungling",
+	"authorUrl": "https://github.com/sjungling",
 	"isDesktopOnly": false
 }
