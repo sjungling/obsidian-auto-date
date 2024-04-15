@@ -1,4 +1,4 @@
-import { Plugin, TAbstractFile, TFile } from "obsidian";
+import { Plugin, TAbstractFile, TFile, moment } from "obsidian";
 
 export default class AutoDatePlugins extends Plugin {
 	async onload() {
@@ -9,9 +9,9 @@ export default class AutoDatePlugins extends Plugin {
 		if (file instanceof TFile) {
 			this.app.fileManager.processFrontMatter(file, (properties) => {
 				if (!properties?.date) {
-					const date = new Date(file.stat.ctime);
-					const formattedDate = date.toISOString().slice(0, 10);
-					properties.date = formattedDate;
+					properties.date = moment(file.stat.ctime).format(
+						"YYYY-MM-DD"
+					);
 				}
 			});
 		}
