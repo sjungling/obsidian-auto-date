@@ -1,7 +1,7 @@
 {
 	"id": "auto-date-property",
 	"name": "Auto-date Property",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"minAppVersion": "1.5.12",
 	"description": "Automatically adds a date property to a note with the creation date",
 	"author": "Scott Jungling",
